@@ -24,13 +24,24 @@ a [bootstrap](http://twitter.github.com/bootstrap/)pified version of the [Exim4U
 ---
 
 ### About  
-* the HTML markup is now free from inline classes.  
-* *bootstrap.css* and *bootstrap.js* are unmodified stock files from Bootstrap 2.2.2.
+* the HTML markup is now free from inline classes
+* *bootstrap.css* and *bootstrap.js* are unmodified stock files from Bootstrap 2.2.2
 * CSS classes used are:   
 `.btn` for submit buttons  
 `.input-append`, `.add-on` to append text to input fields.  
 `.control-label`, `.controls`, `.form-actions` for login fields.  
 `<table>` classes are injected through */js/scripts.js*
+<<<<<<< HEAD
 * styling intentionally kept to a minimum. Feel free to **add your own styles** and classes to the */css/bootstrap.css* stylesheet.
 * the functionality and PHP code remains untouched.  
 It's just make-up release to provide a clean slate. :)
+=======
+* styling intentionally kept to a minimum. Feel free to **add your own styles** and classes to the */css/bootstrap.css* stylesheet
+* the functionality and PHP code remains untouched
+It's just make-up release to provide a clean slate :)
+
+---
+### Todo
+* add some kind of basic templating
+* branch a heavier styled version for out-of-the box usage
+>>>>>>> Updated README.md
