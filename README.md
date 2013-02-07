@@ -19,7 +19,7 @@ a [bootstrap](http://twitter.github.com/bootstrap/)pified version of the [Exim4U
 
 ### Usage
 * backup your *public_html/exim4u/* directory  
-* simply replace the *.php files with the ones from this repo
+* copy the files from this repo into your Exim4U installation and overwrite existing files
 
 ---
 
@@ -32,8 +32,8 @@ a [bootstrap](http://twitter.github.com/bootstrap/)pified version of the [Exim4U
 `.control-label`, `.controls`, `.form-actions` for login fields.  
 `<table>` classes are injected through */js/scripts.js*
 * styling intentionally kept to a minimum. Feel free to **add your own styles** and classes to the */css/bootstrap.css* stylesheet
-* the functionality and PHP code remains untouched
-It's just make-up release to provide a clean slate :)
+* the functionality and PHP code remains untouched  
+It's just a make-up release to provide a clean slate :)
 
 ---
 ### Todo
