@@ -36,7 +36,7 @@
                         <li><a href="siteadd.php?type=alias"><?php echo _('Add Alias Domain'); ?></a></li>
                         <li><a href="siteadd.php?type=local"><?php echo _('Add Local Domain'); ?></a></li>
                         <li><a href="siteadd.php?type=relay"><?php echo _('Add Relay Domain'); ?></a></li>
-                        <li><a href='sitepassword.php'><?php echo _('Site Password'); ?></a></li>
+                        <li><a href="sitepassword.php"><?php echo _('Site Password'); ?></a></li>
                         <li><a href="logout.php"><?php echo _('Logout'); ?></a></li>
                     </ul>
                 </div>

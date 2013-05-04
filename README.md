@@ -6,10 +6,14 @@ a [bootstrap](http://twitter.github.com/bootstrap/)pified version of the [Exim4U
 * old stylesheet (/style.css)
 
 #### Files added:
-* new stylesheet: [Twitter Bootstrap 2.2.2](http://twitter.github.com/bootstrap/). */css/bootstrap.css* 
-* new javascript file: [Twitter Bootstrap 2.2.2](http://twitter.github.com/bootstrap/). */js/bootstrap.min.js*
+* new resources from [Twitter Bootstrap 2.2.2](http://twitter.github.com/bootstrap/): 
+	* /css/bootstrap.css
+	* /js/bootstrap.min.js
+	* /img/glyphicons-halflings-white.png
+	* /img/glyphicons-halflings.png
+
 * new [jQuery](http://jquery.com/) (1.9.0) file. */js/jquery.min.js*
-* new javascript file for table styling. */js/scripts.js*   
+* new javascript file for table styling and tooltips. */js/scripts.js*   
 
 #### Content changes:
 * stripped unused inline-styles and classes  
