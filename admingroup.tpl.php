@@ -20,7 +20,7 @@
                 $ajax->Run();
                 include dirname(__FILE__) . '/config/header.php'; 
             ?>
-     
+
             <div class="navbar">
                 <div class="navbar-inner">
                     <ul id="menu" class="nav">
@@ -40,7 +40,7 @@
                             <thead>
                                 <tr>
                                     <td> </td> 
-                                    <td colspan="2" class="addmlbox"><a rel="tooltip" onclick="openAddMl()" title="<?=_("Add new mailing list")?>" href="#"><i class="icon-plus"></i> <?=_("Add new mailing list")?></a></td>
+                                    <td colspan="2" class="addmlbox"><a rel="tooltip" onclick="openAddMl()" title="<?php echo _("Add new mailing list")?>" href="#"><i class="icon-plus"></i> <?php echo _("Add new mailing list")?></a></td>
                                 </tr>
                                 <tr>
                                     <td> </td>  
@@ -51,15 +51,15 @@
                             </thead>
                             <tbody>
                                 <?php $i = 0; foreach ($groupService->findMailingLists($domainId) as $key => $ml) { ?>
-                                <tr onmouseover="showItem('m<?=$i?>')" onmouseout="hideItem('m<?=$i?>')" id="ml<?=$i?>">
+                                <tr onmouseover="showItem('m<?php echo $i?>')" onmouseout="hideItem('m<?php echo $i?>')" id="ml<?php echo $i?>">
                                     <td class="trashbox">
-                                        <a href="#" onclick="confirmDeleteMl('<?= $ml->getName() ?>', '<?= _('Confirm delete Mailing List')?>', 'ml<?=$i?>', '<?=_("Following mailing list has been deleted")?>', '<?=_("Deleting mailing list")?>')"><i class="icon-trash"></i></a>
+                                        <a href="#" onclick="confirmDeleteMl('<?php echo $ml->getName() ?>', '<?php echo _('Confirm delete Mailing List')?>', 'ml<?php echo $i?>', '<?php echo _("Following mailing list has been deleted")?>', '<?php echo _("Deleting mailing list")?>')"><i class="icon-trash"></i></a>
                                     </td>  
-                                    <td onclick="openEditMlForm('<?=$ml->getName()?>')"><a class="ml" href="#"><?= $ml->getName() ?></a></td>
-                                    <td class="mlcheckbox" onclick="confirmSwitchMlStatus('<?=$ml->getName()?>', 'ml<?=$i?>Status')">
-                                        <img id="ml<?=$i?>Status" class="mlcheck" src="images/<?= $ml->isEnabled() ? 'enabled.png' : 'disabled.png' ?>">
+                                    <td onclick="openEditMlForm('<?php echo $ml->getName()?>')"><a class="ml" href="#"><?php echo $ml->getName() ?></a></td>
+                                    <td class="mlcheckbox" onclick="confirmSwitchMlStatus('<?php echo $ml->getName()?>', 'ml<?php echo $i?>Status')">
+                                        <img id="ml<?php echo $i?>Status" class="mlcheck" src="images/<?php echo $ml->isEnabled() ? 'enabled.png' : 'disabled.png' ?>">
                                     </td>
-                                    <td><?= '('.$ml->getEmailCount().') '.getMailingListPreview($ml, 32) ?></td>
+                                    <td><?php echo '('.$ml->getEmailCount().') '.getMailingListPreview($ml, 32) ?></td>
                                 </tr>
                             <?php $i++; } ?>
                             </tbody>
@@ -76,18 +76,18 @@
                                 <td colspan="2"><h2 id="mlNameTitle">Mailing list name</h2></td>
                             </tr>
                             <tr>
-                                <td class="mlfieldname"><?=_('Reply To')?> [<a href="#" title="<?=_('Indicates where the reply to a message in the mailing list should be posted to')?>" rel="tooltip">?</a>]</td>
+                                <td class="mlfieldname"><?php echo _('Reply To')?> [<a href="#" title="<?php echo _('Indicates where the reply to a message in the mailing list should be posted to')?>" rel="tooltip">?</a>]</td>
                                 <td>
-                                    <div class="mlfieldname"><?=_('List Members Email Addresses')?></div>
+                                    <div class="mlfieldname"><?php echo _('List Members Email Addresses')?></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td id="mlreplyfield">
                                     <label class="radio">
-                                        <input type="radio" name="mlReplyTo" value="s" id="mlReplyTo_s" checked="true"> <?=_('Sender')?>
+                                        <input type="radio" name="mlReplyTo" value="s" id="mlReplyTo_s" checked="true"> <?php echo _('Sender')?>
                                     </label>
                                     <label class="radio">
-                                        <input type="radio" name="mlReplyTo" value="m" id="mlReplyTo_m"> <?=_('Mailing list')?>
+                                        <input type="radio" name="mlReplyTo" value="m" id="mlReplyTo_m"> <?php echo _('Mailing list')?>
                                     </label>
                                 </td>
                                 <td>
@@ -97,8 +97,8 @@
                             <tr>
                                 <td colspan="2">
                                     <div class="buttons">
-                                        <button class="btn" type="submit" name="cancel" onclick="return discardMlChanges()"><?=_('Discard changes')?></button>
-                                        <button class="btn" type="submit" name="save"><?=_('Save')?></button>
+                                        <button class="btn" type="submit" name="cancel" onclick="return discardMlChanges()"><?php echo _('Discard changes')?></button>
+                                        <button class="btn" type="submit" name="save"><?php echo _('Save')?></button>
                                     </div>
                                 </td>
                             </tr>
