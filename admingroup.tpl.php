@@ -20,7 +20,7 @@
                 $ajax->Run();
                 include dirname(__FILE__) . '/config/header.php'; 
             ?>
-
+     
             <div class="navbar">
                 <div class="navbar-inner">
                     <ul id="menu" class="nav">
@@ -33,7 +33,7 @@
             
             <div id="Content">
                 <div id="mlAndGroupLists">
-                    <? //////////////////////////////////////////////// Mailing List ?>
+                    <?php //////////////////////////////////////////////// Mailing List ?>
                     <div id="mllist">
                         <h2>Simple Mailing Lists</h2>
                         <table class="mllist">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             
-                <? //////////////////////////////////////////////// Mailing List hidden items ?>
+                <?php //////////////////////////////////////////////// Mailing List hidden items ?>
                 <div id="mledit" style="display:none;">
                     <form name="mleditform" id="mleditform" method="post" action="saveMailingListChanges.php" onsubmit="return saveMlChanges(this);">
                         <input type="hidden" name="mlName" id="mlName" value="">
@@ -108,7 +108,7 @@
                 </div>
             </div>
                 
-            <? //////////////////////////////////////////////// Message bar ?>
+            <?php //////////////////////////////////////////////// Message bar ?>
             <div id="messageBar">
                 <span id="running" style="visibility:hidden;">running</span><br>
                 <span id="state"></span>
