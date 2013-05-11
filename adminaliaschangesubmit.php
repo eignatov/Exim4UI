@@ -39,7 +39,7 @@
 	  if (validate_password($_POST['password'], $_POST['vpassword'])) {
 		$cryptedpassword = crypt_password($_POST['password']);
 		$query = "UPDATE users SET crypt='{$cryptedpassword}',
-		  clear='{$_POST['crypt']}' WHERE user_id='{$_POST['user_id']}' 
+		  clear='{$_POST['password']}' WHERE user_id='{$_POST['user_id']}' 
 		  AND domain_id='{$_SESSION['domain_id']}' AND type='alias'";
 		$result = $db->query($query);
 		if (!DB::isError($result)) {
